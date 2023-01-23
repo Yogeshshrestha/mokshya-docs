@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Mokshya",
   tagline: "Mokshya Protocol",
-  url: "https://your-docusaurus-test-site.com",
+  url: "http://localhost:3000/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "Mokshya", // Usually your GitHub org/user name.
+  projectName: "mokshya-docs", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -37,8 +37,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/Yogeshshrestha/mokshya-docs/tree/main/",
         },
         blog: false,
         // blog: {
@@ -55,9 +54,18 @@ const config = {
     ],
   ],
 
+  // themes: ["@docusaurus/theme-search-algolia"],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // algolia: {
+      //   api: "2c473e0a42b84c6b90a733d10aa10ebe",
+      //   indexName: "mokshya_docs",
+      //   contextualSearch: true,
+      //   placeholder: "Search in my beautiful website",
+      //   appId: "USFOT78RE3",
+      // },
       navbar: {
         // title: "My Site",
         logo: {
@@ -73,7 +81,7 @@ const config = {
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/mokshyaprotocol",
             label: "GitHub",
             position: "right",
           },
@@ -87,7 +95,7 @@ const config = {
             items: [
               {
                 label: "Mokshya Protocol",
-                to: "/docs/mokshya",
+                to: "/",
               },
             ],
           },
@@ -95,16 +103,12 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discord.com/invite/U9RkTGfU6Y",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                href: "https://twitter.com/mokshyaprotocol?s=21&t=qlWJHb7IKQCfa0t6SuxbFA",
               },
             ],
           },
@@ -112,8 +116,8 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Mokshya Website",
+                href: "https://mokshya.io/",
               },
               {
                 label: "GitHub",
@@ -122,7 +126,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Mokshya`,
       },
       prism: {
         theme: lightCodeTheme,
