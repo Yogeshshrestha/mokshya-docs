@@ -8,7 +8,18 @@ sidebar_position: 2
 
 Create an Asset Folder and add Images and Metadata into it.
 
-# missing!
+| Assets/images | Assets/metadata |
+| ------------- | --------------- |
+| 0.png         | 0.json          |
+| 1.png         | 1.json          |
+| 2.png         | 2.json          |
+| 3.png         | 3.json          |
+| 4.png         | 4.json          |
+| 5.png         | 5.json          |
+| 6.png         | 6.json          |
+| 7.png         | 7.json          |
+| 8.png         | 8.json          |
+| 9.png         | 9.json          |
 
 Upload it in arweave using **[arkb](https://www.npmjs.com/package/arkb)**
 

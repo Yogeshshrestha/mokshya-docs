@@ -3,12 +3,13 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+// const navbars = require("./navbars");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Mokshya",
   tagline: "Mokshya Protocol",
-  url: "http://localhost:3000/",
+  url: "https://mokshya-docs-7r96.vercel.app/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -38,7 +39,10 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/Yogeshshrestha/mokshya-docs/tree/main/",
+
+          // lastUpdated: new Date(),
         },
+        // lastUpdated: "Dec 31, 2022",
         blog: false,
         // blog: {
         //   showReadingTime: true,
@@ -59,18 +63,25 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // algolia: {
-      //   api: "2c473e0a42b84c6b90a733d10aa10ebe",
-      //   indexName: "mokshya_docs",
-      //   contextualSearch: true,
-      //   placeholder: "Search in my beautiful website",
-      //   appId: "USFOT78RE3",
-      // },
+      enableUpdateTime: true,
+      lastUpdated: true,
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
+      algolia: {
+        apiKey: "2c473e0a42b84c6b90a733d10aa10ebe",
+        indexName: "mokshya_docs",
+        contextualSearch: true,
+        placeholder: "Search in my beautiful website",
+        appId: "USFOT78RE3",
+      },
       navbar: {
         // title: "My Site",
         logo: {
           alt: "Mokshya",
-          src: "img/logo.svg",
+          src: "img/docusaurus.png",
         },
         items: [
           {
@@ -84,6 +95,7 @@ const config = {
             href: "https://github.com/mokshyaprotocol",
             label: "GitHub",
             position: "right",
+            // navbars,
           },
         ],
       },
