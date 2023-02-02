@@ -3,6 +3,8 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const path = require("path");
+
 // const navbars = require("./navbars");
 
 /** @type {import('@docusaurus/types').Config} */
@@ -27,6 +29,8 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+
+  plugins: [path.resolve(__dirname, "./node_modules/docusaurus-lunr-search/")],
 
   presets: [
     [
@@ -58,7 +62,18 @@ const config = {
     ],
   ],
 
-  // themes: ["@docusaurus/theme-search-algolia"],
+  // themes: [
+  //   [
+  //     "@easyops-cn/docusaurus-search-local",
+  //     /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+  //     ({
+  //       hashed: true,
+  //       language: ["en"],
+  //       highlightSearchTermsOnTargetPage: true,
+  //       explicitSearchResultPath: true,
+  //     }),
+  //   ],
+  // ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -70,13 +85,13 @@ const config = {
           hideable: true,
         },
       },
-      algolia: {
-        apiKey: "2c473e0a42b84c6b90a733d10aa10ebe",
-        indexName: "mokshya_docs",
-        contextualSearch: true,
-        placeholder: "Search in my beautiful website",
-        appId: "USFOT78RE3",
-      },
+      // algolia: {
+      //   apiKey: "2c473e0a42b84c6b90a733d10aa10ebe",
+      //   indexName: "mokshya_docs",
+      //   contextualSearch: true,
+      //   placeholder: "Search in my beautiful website",
+      //   appId: "USFOT78RE3",
+      // },
       navbar: {
         // title: "My Site",
         logo: {
