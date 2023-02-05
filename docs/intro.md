@@ -7,7 +7,9 @@ slug: /
 
 <i class="fa fa-github"></i>
 
-Mokshya is an open-source protocol and product suite that helps developers build and launch decentralized applications on multiple blockchains. Our team of developers and project managers are focused on providing well-documented smart contracts and software development kits (SDKs) to make it easier for web3 projects to get started. We are currently working on building smart contracts for Aptos, Sui, and Solana. The name Mokshya comes from Sanskrit and means liberation from the cycle of death and rebirth. Our aim at Mokshya is to liberate and empower developers.
+Moskhya is an open-source protocol building smart contacts and SDKs for Aptos Blockchain. Our objective is to help onboard the next 10,000+ web3 projects by building well documented smart contracts and SDKs for developers.
+
+Our team of developers and project managers are focused on providing well-documented smart contracts and software development kits (SDKs) to make it easier for web3 projects to get started. We are currently working on building smart contracts for Aptos, blockchain. The name Mokshya comes from Sanskrit and means liberation from the cycle of death and rebirth. Our aim at Mokshya is to liberate and empower developers.
 
 Our team has launched the following smart contracts on various blockchains:
 

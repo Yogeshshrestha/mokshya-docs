@@ -41,13 +41,13 @@ For more detail review - **[https://docs.arweave.org/developers/tools/textury-ar
 
 :::
 
-Now you will see a link like https://arweave.net/Your_ID
+Now you will see a link like `https://arweave.net/Your_ID`
 
-copy your arweave url and your json file must have image parameter with https://arweave.net/Your_ID/index_of_image.json
+copy your arweave url and your json file must have image parameter with `https://arweave.net/Your_ID/index_of_image.json`
 
 :::note
 
-https://arweave.net/Your_ID/ is your baseuri that you need to add in config.json
+`https://arweave.net/Your_ID/` is your baseuri that you need to add in config.json
 
 :::
 
